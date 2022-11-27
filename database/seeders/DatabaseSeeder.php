@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             }
 
         // Administration
-            $administrations= [
+            $admins= [
                 [
                     'section' => 'Stab',
                     'emergency_number' => '0152 123456',
@@ -77,9 +77,9 @@ class DatabaseSeeder extends Seeder
                     'division' => 'Geschäftsführung',
                 ],
             ];
-            foreach ($administrations as $administration)
+            foreach ($admins as $admin)
             {
-                DB::table('administrations')->insert($administration);
+                DB::table('admins')->insert($admin);
             }
 
         // Care Center
@@ -108,19 +108,19 @@ class DatabaseSeeder extends Seeder
             }
 
         // Drive Service
-            $drive_services= [
+            $driving_services= [
                 [
                     'section' => 'Fahrdienst',
                     'emergency_number' => '0173 555555',
                 ],
             ];
-            foreach ($drive_services as $drive_service)
+            foreach ($driving_services as $driving_service)
             {
-                DB::table('drive_services')->insert($drive_service);
+                DB::table('driving_services')->insert($driving_service);
             }
 
         // Contact Persons
-            $contact_persons= [
+            $contacts= [
                 [
                     'surname' => 'Doe',
                     'forename' => 'John',
@@ -138,9 +138,9 @@ class DatabaseSeeder extends Seeder
                     'is_primary' => false,
                 ],
             ];
-            foreach ($contact_persons as $contact_person)
+            foreach ($contacts as $contact)
             {
-                DB::table('contact_persons')->insert($contact_person);
+                DB::table('contacts')->insert($contact);
             }
 
     }

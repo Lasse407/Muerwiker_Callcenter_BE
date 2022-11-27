@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\ContactPerson;
+use App\Models\Administration;
 
-class ContactPersonController extends Controller
+class AdminController extends Controller
 {
     public function index()
     {
-        return ContactPerson::all();
+        return Administration::all();
     }
 }
