@@ -11,7 +11,8 @@ class Work extends Model
 
     protected $fillable = ['section','emergency_number','location','street','house_number','picture','department'];
 
+
     public function works(){
-        return $this->belongsToOne(ContactPerson::Class)->withTimestamps();
+        return $this->belongsToOne(Contact::Class)->withTimestamps();
     }
 }

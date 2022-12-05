@@ -3,12 +3,19 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreWorkRequest;
 use App\Models\Work;
-use http\Env\Request;
-use \Illuminate\Http\Response;
+use Illuminate\Http\JsonResponse;
+use \Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class WorkController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return JsonResponse
+     */
     public function index()
     {
         $works = Work::all();
@@ -19,12 +26,23 @@ class WorkController extends Controller
         ]);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
     public function create()
     {
         //
     }
 
-    public function store (Request $request)
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function store (Request $request): JsonResponse
     {
         $work = Work::create($request->all());
 
@@ -35,17 +53,37 @@ class WorkController extends Controller
         ], 200);
     }
 
-    public function show(Work $work)
+
+    /**
+     * Display the specified resource.
+     *
+     * @param Work $work
+     * @return Work
+     */
+    public function show(Work $work): Work
     {
         return $work;
     }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param Work $work
+     * @return Response
+     */
     public function edit(Work $work)
     {
         //
     }
 
-    public function update(Request $request, Work $work)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param Request $request
+     * @param Work $work
+     * @return JsonResponse
+     */
+    public function update(Request $request, Work $work): JsonResponse
     {
         $work->update($request->all());
 
@@ -56,7 +94,13 @@ class WorkController extends Controller
         ], 200);
     }
 
-    public function destroy(Work $work)
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param Work $work
+     * @return JsonResponse
+     */
+    public function destroy(Work $work): JsonResponse
     {
         $work->delete();
 
