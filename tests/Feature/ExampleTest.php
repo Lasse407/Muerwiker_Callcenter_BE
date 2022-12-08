@@ -64,6 +64,10 @@ class ExampleTest extends TestCase
     // These got copied for the remaining Tables within the Database to prove the same thing.
     // Third Test tests proves the ability to delete curtain users from DB
 
+
+    //Test Oracle 
+    // The Test should pass if the Name "Thomas Stengel" is in the Users Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function userExists()
     {
         $this->assertDatabaseHas('users', [
@@ -72,6 +76,9 @@ class ExampleTest extends TestCase
         ]);
     }
 
+    //Test Oracle 
+    // The Test should pass if the Surname "Bork" is in the contacts-Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function contactExists()
     {
         $this->assertDatabaseHas('contacts', [
@@ -80,6 +87,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if this email-Adress is in the password_resets Table. So it proves that the password could reset successfuly. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function PasswordResetTest()
     {
         $this->assertDatabaseHas('password_resets', [
@@ -88,6 +99,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the section "Finanzen" is in the works Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function worksExists1()
     {
         $this->assertDatabaseHas('works', [
@@ -96,6 +111,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the section "Geschäftsleitung" is in the works Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function worksExists2()
     {
         $this->assertDatabaseHas('works', [
@@ -104,6 +123,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the section "Marketing" is in the works Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function worksExists3()
     {
         $this->assertDatabaseHas('works', [
@@ -112,6 +135,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the section "Bildung und Begleitung" is in the works Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function worksExists4()
     {
         $this->assertDatabaseHas('works', [
@@ -120,38 +147,58 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the street "Buchenweg" is in the livings Table. No return Value. Only passing in the terminal without any response-Message
+    // Note! If all "Living" Tests passes. It proves that every living is available for further working in DB or BE
     public function livingsExists1()
     {
-        $this->assertDatabaseHas('living', [
+        $this->assertDatabaseHas('livings', [
             'street' => 'Buchenweg'
 
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the street "Terassenstraße" is in the livings Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function livingsExists2()
     {
-        $this->assertDatabaseHas('living', [
+        $this->assertDatabaseHas('livings', [
             'street' => 'Terassenstraße'
 
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the street "Nova" is in the livings Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function livingsExists3()
     {
-        $this->assertDatabaseHas('living', [
+        $this->assertDatabaseHas('livings', [
             'street' => 'Nova'
 
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the street "Raiffeisenstraße" is in the livings Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function livingsExists4()
     {
-        $this->assertDatabaseHas('living', [
+        $this->assertDatabaseHas('livings', [
             'street' => 'Raiffeisenstraße'
 
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the street "Buchenweg" is in the livings Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function care_centerExists()
     {
         $this->assertDatabaseHas('care_centers', [
@@ -160,6 +207,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass if the user "Jay Rehder" is missing in the Users Table. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function userIsMissing()
     {
         $this->assertDatabaseMissing('users', [
@@ -167,6 +218,10 @@ class ExampleTest extends TestCase
         ]);
     }
 
+
+    //Test Oracle 
+    // The Test should pass the Users was made successfuly and got deleted after. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function deleteUser ()
     {
         $user = User::factory()->count(1)->make();
@@ -186,7 +241,9 @@ class ExampleTest extends TestCase
     //          -----------------------         Seeder Testing       ----------------------------
     //
 
-
+    //Test Oracle 
+    // The Test should pass, so it shows that every Seeder was created successfuly. No return Value. Only passing in the terminal without any response-Message
+    // 
     public function testIfSeedersWorks()
     {
         $this->seed();
