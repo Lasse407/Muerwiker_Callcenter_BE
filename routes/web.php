@@ -23,14 +23,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::apiResource('api/work', WorkController::class);
-Route::apiResource('api/living', LivingController::class);
-Route::apiResource('api/driving-service', DrivingServiceController::class);
-Route::apiResource('api/contact', ContactController::class);
-Route::apiResource('api/care-center', CareCenterController::class);
-Route::apiResource('api/admin', AdminController::class);
-
-
 
 
 
