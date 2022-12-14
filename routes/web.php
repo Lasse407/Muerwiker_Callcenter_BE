@@ -23,12 +23,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::apiResource('work', WorkController::class);
-Route::apiResource('living', LivingController::class);
-Route::apiResource('driving-service', DrivingServiceController::class);
-Route::apiResource('contact', ContactController::class);
-Route::apiResource('care-center', CareCenterController::class);
-Route::apiResource('admin', AdminController::class);
+Route::apiResource('api/work', WorkController::class);
+Route::apiResource('api/living', LivingController::class);
+Route::apiResource('api/driving-service', DrivingServiceController::class);
+Route::apiResource('api/contact', ContactController::class);
+Route::apiResource('api/care-center', CareCenterController::class);
+Route::apiResource('api/admin', AdminController::class);
+
 
 
 

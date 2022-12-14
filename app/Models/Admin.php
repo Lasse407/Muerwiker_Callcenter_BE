@@ -11,6 +11,16 @@ class Admin extends Model
 
     protected $fillable = ['section','emergency_number','division'];
 
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'section' => 'Stab',
+    ];
+
+
     public function administrations(){
         return $this->belongsToOne(Contact::Class)->withTimestamps();
     }

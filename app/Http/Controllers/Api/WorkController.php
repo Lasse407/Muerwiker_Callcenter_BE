@@ -26,15 +26,6 @@ class WorkController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -44,6 +35,7 @@ class WorkController extends Controller
      */
     public function store (Request $request): JsonResponse
     {
+
         $work = Work::create($request->all());
 
         return response()->json([
@@ -63,17 +55,6 @@ class WorkController extends Controller
     public function show(Work $work): Work
     {
         return $work;
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param Work $work
-     * @return Response
-     */
-    public function edit(Work $work)
-    {
-        //
     }
 
     /**

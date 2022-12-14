@@ -11,6 +11,16 @@ class Contact extends Model
 
     protected $fillable = ['surname','forename','email','phone_number','picture','is_primary'];
 
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'picture' => 'none',
+        'is_primary' => true,
+    ];
+
     public function contactWorks(){
         return $this->belongsToMany(Work::Class)->withTimestamps();
     }

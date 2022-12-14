@@ -11,6 +11,17 @@ class CareCenter extends Model
 
     protected $fillable = ['section','emergency_number','location','street','house_number','picture'];
 
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'section' => 'Tagesfoerderstaette',
+        'house_number' => 'none',
+        'picture' => 'none',
+    ];
+
     public function careCenters(){
         return $this->belongsToOne(Contact::Class)->withTimestamps();
     }
