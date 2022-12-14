@@ -11,6 +11,18 @@ class Work extends Model
 
     protected $fillable = ['section','emergency_number','location','street','house_number','picture','department'];
 
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'section' => 'Arbeiten',
+        'house_number' => 'none',
+        'picture' => 'none',
+        'department' => 'none',
+    ];
+
 
     public function works(){
         return $this->belongsToOne(Contact::Class)->withTimestamps();

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<form method="post">
+    @csrf <!-- {{ csrf_field() }} -->
+</form>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
