@@ -1,4 +1,8 @@
 <?php
+/*
+ * Lasse Emmerich - Im Seeder haben wir definiert, woraus der Default-Inhalt der Datenbank besteht. Orientiert wurde sich hierbei an die erhaltenen Daten von Tanja.
+ * Durch ausführen des Seeders wird die Datenbank gem. der unten definierten Inhalte befüllt.
+ */
 
 namespace Database\Seeders;
 
@@ -18,25 +22,34 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // Work
+        // Work --> Objekt Arbeiten
             $works= [
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Flensburg',
                     'street' => 'Raiffeisenstraße',
-                    'house_number' => '',
+                    'house_number' => '8c',
                     'picture' => 'none',
-                    'department' => 'Werkstatt Garten, Rabenholz, Kaminholz, Gartenbau',
+                    'department' => 'Kaminholz',
                 ],
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Flensburg',
                     'street' => 'Raiffeisenstraße',
-                    'house_number' => '12-14, WW10',
+                    'house_number' => '12-14',
                     'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Elektro, Montage, Verpackung, Bändermontage, Lebensmittel',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Flensburg',
+                    'street' => 'Raiffeisenstraße',
+                    'house_number' => '17',
+                    'picture' => 'none',
+                    'department' => 'Gärtnerei',
                 ],
                 [
                     'section' => 'Arbeiten',
@@ -45,61 +58,97 @@ class DatabaseSeeder extends Seeder
                     'street' => 'Raiffeisenstraße',
                     'house_number' => '21',
                     'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Danfoss',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Flensburg',
+                    'street' => 'Wittenberger Weg',
+                    'house_number' => '10',
+                    'picture' => 'none',
+                    'department' => 'Lebensmittelverpackung (LeMi)',
                 ],
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Flensburg',
                     'street' => 'Glyngöre',
-                    'house_number' => '',
+                    'house_number' => 'none',
                     'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Spektrum, Holz',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Flensburg',
+                    'street' => 'Westerallee',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                    'department' => 'Spektrum, Verpackung, Nähen, GHC',
                 ],
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Flensburg',
                     'street' => 'Gewerbegrund',
-                    'house_number' => '',
+                    'house_number' => 'none',
                     'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Metall, Verpackung, Montage',
                 ],
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Flensburg',
                     'street' => 'Treeneweg',
-                    'house_number' => '12',
+                    'house_number' => '10',
                     'picture' => 'none',
-                    'department' => 'none',
-                ],
-                [
-                    'section' => 'Arbeiten',
-                    'emergency_number' => '0152 123456',
-                    'location' => 'Flensburg',
-                    'street' => 'WA',
-                    'house_number' => '12',
-                    'picture' => 'none',
-                    'department' => 'none',
-                ],
-                [
-                    'section' => 'Arbeiten',
-                    'emergency_number' => '0152 123456',
-                    'location' => 'Bildung & Begleitung',
-                    'street' => 'default',
-                    'house_number' => '12',
-                    'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Verpackung, Montage, Besen u. Bürsten, LebensArt',
                 ],
                 [
                     'section' => 'Arbeiten',
                     'emergency_number' => '0152 123456',
                     'location' => 'Niebüll',
-                    'street' => 'default',
-                    'house_number' => '12',
+                    'street' => 'Nova',
+                    'house_number' => 'none',
                     'picture' => 'none',
-                    'department' => 'none',
+                    'department' => 'Nähen, Lego, Bürodienstleistungen, Elektro',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Niebüll',
+                    'street' => 'Fritz-Jannsen-Straße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                    'department' => 'Montage, KFZ-Pflege, Verpackung',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Niebüll',
+                    'street' => 'Weberstraße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                    'department' => 'Elektro, Küche',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Niebüll',
+                    'street' => 'Schmiedestraße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                    'department' => 'Holz, Garten',
+                ],
+                [
+                    'section' => 'Arbeiten',
+                    'emergency_number' => '0152 123456',
+                    'location' => 'Niebüll',
+                    'street' => 'Bahnhofstraße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                    'department' => 'Lager',
                 ],
             ];
             foreach ($works as $work)
@@ -107,22 +156,118 @@ class DatabaseSeeder extends Seeder
                 DB::table('works')->insert($work);
             }
 
-        // Living
+        // Living -> Objekt Wohnen
             $livings= [
                 [
                     'section' => 'Wohnen',
                     'emergency_number' => '0152 456789',
                     'location' => 'Flensburg',
-                    'street' => 'Musterstraße',
-                    'house_number' => '24',
+                    'street' => 'Terassenstraße',
+                    'house_number' => 'none',
                     'picture' => 'none',
                 ],
                 [
                     'section' => 'Wohnen',
-                    'emergency_number' => '0152 654321',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Treeneweg',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Mürwiker Straße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Molktestraße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Mittendrin',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Skolehaven',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'Rabenholz',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Flensburg',
+                    'street' => 'ABW',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Schafflund',
+                    'street' => 'Dammacker',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Munkbrarup',
+                    'street' => 'Brombeerhof',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
                     'location' => 'Niebüll',
-                    'street' => 'Musterstraße',
-                    'house_number' => '36',
+                    'street' => 'Buchenweg',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Niebüll',
+                    'street' => 'Schreberweg',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Niebüll',
+                    'street' => 'Weberstraße',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Wohnen',
+                    'emergency_number' => '0152 456789',
+                    'location' => 'Niebüll',
+                    'street' => 'Theodor-Storm-Straße',
+                    'house_number' => 'none',
                     'picture' => 'none',
                 ],
             ];
@@ -131,22 +276,12 @@ class DatabaseSeeder extends Seeder
                 DB::table('livings')->insert($living);
             }
 
-        // Administration
+        // Admin --> Bereich Stab
             $admins= [
                 [
                     'section' => 'Stab',
                     'emergency_number' => '0151 18857333',
-                    'division' => 'Geschäftsleitung',
-                ],
-                [
-                    'section' => 'Stab',
-                    'emergency_number' => '0151 18857333',
-                    'division' => 'Finanzen',
-                ],
-                [
-                    'section' => 'Stab',
-                    'emergency_number' => '0151 18857333',
-                    'division' => 'Verwalten',
+                    'division' => 'Presse',
                 ],
                 [
                     'section' => 'Stab',
@@ -156,17 +291,17 @@ class DatabaseSeeder extends Seeder
                 [
                     'section' => 'Stab',
                     'emergency_number' => '0151 18857333',
-                    'division' => 'Controlling',
+                    'division' => 'Finanzen',
+                ],
+                [
+                    'section' => 'Stab',
+                    'emergency_number' => '0151 18857333',
+                    'division' => 'Geschäftsleitung',
                 ],
                 [
                     'section' => 'Stab',
                     'emergency_number' => '0151 18857333',
                     'division' => 'Marketing',
-                ],
-                [
-                    'section' => 'Stab',
-                    'emergency_number' => '0151 18857333',
-                    'division' => 'QM, Datenschutz',
                 ],
                 [
                     'section' => 'Stab',
@@ -181,7 +316,7 @@ class DatabaseSeeder extends Seeder
                 [
                     'section' => 'Stab',
                     'emergency_number' => '0151 18857333',
-                    'division' => 'IT',
+                    'division' => 'Datenschutz, Arbeitssicherheit',
                 ],
             ];
             foreach ($admins as $admin)
@@ -189,24 +324,41 @@ class DatabaseSeeder extends Seeder
                 DB::table('admins')->insert($admin);
             }
 
-        // Care Center
+        // Care Center --> Objekt Tagesförderstätte
             $care_centers= [
                 [
                     'section' => 'Tagesförderstätte',
-                    'emergency_number' => '0152 123456',
+                    'emergency_number' => '0160 91755716',
                     'location' => 'Flensburg',
-                    'street' => 'Schottweg',
-                    'house_number' => '55',
+                    'street' => 'Raiffeisenstraße',
+                    'house_number' => 'none',
                     'picture' => 'none',
                 ],
                 [
                     'section' => 'Tagesförderstätte',
-                    'emergency_number' => '0152 654321',
-                    'location' => 'Schafflund',
-                    'street' => 'Musterstraße',
-                    'house_number' => '12',
+                    'emergency_number' => '0160 91755716',
+                    'location' => 'Flensburg',
+                    'street' => 'Harkmor',
+                    'house_number' => 'none',
                     'picture' => 'none',
                 ],
+                [
+                    'section' => 'Tagesförderstätte',
+                    'emergency_number' => '0160 91755716',
+                    'location' => 'Niebüll',
+                    'street' => 'none',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+                [
+                    'section' => 'Tagesförderstätte',
+                    'emergency_number' => '0160 91755716',
+                    'location' => 'Munkbrarup',
+                    'street' => 'none',
+                    'house_number' => 'none',
+                    'picture' => 'none',
+                ],
+
             ];
 
             foreach ($care_centers as $care_center)
@@ -214,11 +366,11 @@ class DatabaseSeeder extends Seeder
                 DB::table('care_centers')->insert($care_center);
             }
 
-        // Drive Service
+        // Drive Service --> Objekt Fahrservice
             $driving_services= [
                 [
                     'section' => 'Fahrdienst',
-                    'emergency_number' => '0173 555555',
+                    'emergency_number' => '0461 70718421',
                 ],
             ];
             foreach ($driving_services as $driving_service)
@@ -226,7 +378,23 @@ class DatabaseSeeder extends Seeder
                 DB::table('driving_services')->insert($driving_service);
             }
 
-        // Contact Persons
+            $drivingServiceRelationShips = [
+                [
+                    'driving_service_id' => 1,
+                    'contact_id' => 3,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
+                ]
+            ];
+
+        foreach ($drivingServiceRelationShips as $drivingServiceRelationShip)
+        {
+            DB::table('driving_service_contact')->insert($drivingServiceRelationShip);
+        };
+
+
+
+        // Contact --> Objekt Ansprechpartner
             $contacts= [
                 [
                     'surname' => 'Beate',

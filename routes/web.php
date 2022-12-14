@@ -1,11 +1,5 @@
 <?php
 
-use App\Http\Controllers\Api\WorkController;
-use App\Http\Controllers\Api\AdminController;
-use App\Http\Controllers\Api\CareCenterController;
-use App\Http\Controllers\Api\ContactController;
-use App\Http\Controllers\Api\DrivingServiceController;
-use App\Http\Controllers\Api\LivingController;
 
 use Illuminate\Support\Facades\Route;
 
