@@ -6,8 +6,6 @@
 
 namespace Database\Seeders;
 
-use Carbon\Carbon;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -377,22 +375,6 @@ class DatabaseSeeder extends Seeder
             {
                 DB::table('driving_services')->insert($driving_service);
             }
-
-            $drivingServiceRelationShips = [
-                [
-                    'driving_service_id' => 1,
-                    'contact_id' => 3,
-                    'created_at' => Carbon::now(),
-                    'updated_at' => Carbon::now(),
-                ]
-            ];
-
-        foreach ($drivingServiceRelationShips as $drivingServiceRelationShip)
-        {
-            DB::table('driving_service_contact')->insert($drivingServiceRelationShip);
-        };
-
-
 
         // Contact --> Objekt Ansprechpartner
             $contacts= [
