@@ -12,7 +12,8 @@ class DrivingService extends Model
     // for avoiding MassAssignmentException using the $fillable method
     protected $fillable = ['section','emergency_number'];
 
+    // Mapping an Object to many Contacts
     public function drivingServices(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 }

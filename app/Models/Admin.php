@@ -22,8 +22,8 @@ class Admin extends Model
         'section' => 'Stab',
     ];
 
-
+    // Mapping an Object to many Contacts
     public function administrations(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 }

@@ -24,7 +24,8 @@ class CareCenter extends Model
         'picture' => 'none',
     ];
 
+    // Mapping an Object to many Contacts
     public function careCenters(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 }

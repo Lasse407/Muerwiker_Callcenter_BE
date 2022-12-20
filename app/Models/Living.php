@@ -24,8 +24,9 @@ class Living extends Model
         'picture' => 'none',
     ];
 
+    // Mapping an Object to many Contacts
     public function livings(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 
 }

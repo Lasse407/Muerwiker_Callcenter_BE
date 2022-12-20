@@ -25,7 +25,8 @@ class Work extends Model
     ];
 
 
+    // Mapping an Object to many Contacts
     public function works(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 }
