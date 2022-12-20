@@ -24,6 +24,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Each Route is given the post, put and delete method for being able to manage the objects in the frontend. When a new Object is created, the Route::post method is used. When an object is deleted, the Route::delete method is used.
+
 Route::get('/works', [WorkController::class, 'index']);
 
 Route::prefix('/work')->group( function () {

@@ -9,6 +9,8 @@ class CareCenter extends Model
 {
     use HasFactory;
 
+
+    // for avoiding MassAssignmentException using the $fillable method
     protected $fillable = ['section','emergency_number','location','street','house_number','picture'];
 
     /**
@@ -22,7 +24,8 @@ class CareCenter extends Model
         'picture' => 'none',
     ];
 
+    // Mapping an Object to many Contacts
     public function careCenters(){
-        return $this->belongsToOne(Contact::Class)->withTimestamps();
+        return $this->belongsToMany(Contact::Class)->withTimestamps();
     }
 }

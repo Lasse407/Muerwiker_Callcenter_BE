@@ -1,8 +1,10 @@
 <?php
+// Inside the migrations-table, the database is given a instruction on how to set up a table with what values.
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+
 
 class CreateCareCentersTable extends Migration
 {

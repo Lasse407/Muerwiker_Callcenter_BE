@@ -1,4 +1,6 @@
 <?php
+// Inside the migrations-table, the database is given a instruction on how to set up a table with what values.
+// This table connects the contacts and driving-service objects to one another
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
