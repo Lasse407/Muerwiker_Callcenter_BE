@@ -9,6 +9,8 @@ class Contact extends Model
 {
     use HasFactory;
 
+
+    // for avoiding MassAssignmentException using the $fillable method
     protected $fillable = ['surname','forename','email','phone_number','picture','is_primary'];
 
     /**

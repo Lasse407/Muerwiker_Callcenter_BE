@@ -9,6 +9,7 @@ class Work extends Model
 {
     use HasFactory;
 
+    // for avoiding MassAssignmentException using the $fillable method
     protected $fillable = ['section','emergency_number','location','street','house_number','picture','department'];
 
     /**

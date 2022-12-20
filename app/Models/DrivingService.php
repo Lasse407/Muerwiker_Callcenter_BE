@@ -9,6 +9,7 @@ class DrivingService extends Model
 {
     use HasFactory;
 
+    // for avoiding MassAssignmentException using the $fillable method
     protected $fillable = ['section','emergency_number'];
 
     public function drivingServices(){

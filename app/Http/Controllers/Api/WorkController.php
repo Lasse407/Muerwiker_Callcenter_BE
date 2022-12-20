@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreWorkRequest;
 use App\Models\Work;
 use Illuminate\Http\JsonResponse;
 use \Illuminate\Http\Request;

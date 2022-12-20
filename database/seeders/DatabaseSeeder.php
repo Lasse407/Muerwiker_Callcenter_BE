@@ -1,7 +1,6 @@
 <?php
 /*
- * Lasse Emmerich - Im Seeder haben wir definiert, woraus der Default-Inhalt der Datenbank besteht. Orientiert wurde sich hierbei an die erhaltenen Daten von Tanja.
- * Durch ausführen des Seeders wird die Datenbank gem. der unten definierten Inhalte befüllt.
+ * Inside the Seeder we define what default values will be added to the database, when the seeder is executed via 'php artisan db:seed'. We therefore used the Data given by the client, to make it most realistic.
  */
 
 namespace Database\Seeders;
