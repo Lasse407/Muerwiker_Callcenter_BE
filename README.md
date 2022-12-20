@@ -27,7 +27,7 @@ Install Laravel with Composer
 
     
 terminal -> open folder ./backend/ and type
-- `php artisan serve`
+
 - `php artisan migrate`
 - `php artisan db:seed`
 
